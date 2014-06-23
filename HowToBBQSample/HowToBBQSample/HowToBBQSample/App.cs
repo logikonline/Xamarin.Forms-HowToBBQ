@@ -1,8 +1,8 @@
-﻿using System;
+﻿using HowToBBQSample.Views;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
 using Xamarin.Forms;
 
 namespace HowToBBQSample
@@ -11,15 +11,8 @@ namespace HowToBBQSample
     {
         public static Page GetMainPage()
         {
-            return new ContentPage
-            {
-                Content = new Label
-                {
-                    Text = "Hello, Forms !",
-                    VerticalOptions = LayoutOptions.CenterAndExpand,
-                    HorizontalOptions = LayoutOptions.CenterAndExpand,
-                },
-            };
+            var recipes = new BBQRecipesPage();
+            return new NavigationPage(recipes);
         }
     }
 }
