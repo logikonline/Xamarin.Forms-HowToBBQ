@@ -37,7 +37,7 @@ namespace HowToBBQSample.ViewModels
                 Serves = 10,
                 PrepTime = 0,
                 TotalTime = 0,
-                Image = "Dry_Glazed_Pork_Tenderloin"
+                Image = "DryGlazedPorkTenderloin"
             });
 
             Recipes.Add(new BBQRecipe
@@ -64,12 +64,12 @@ namespace HowToBBQSample.ViewModels
                 PrepTime = 10,
                 TotalTime = 22,
                 Serves = 4,
-                Image = "Grilled_Pork_Chops_and_Zesty_Sauce_Vierge_with_Feta"
+                Image = "GrilledPorkChopsandZestySauceViergewithFeta"
             });
 
             Recipes.Add(new BBQRecipe
             {
-                Name = "St. Louis-Style Pork Ribs",
+                Name = "St. Louis Style Pork Ribs",
                 ShortDesc = "Bad to the bone gets a whole new meaning with our fabulous, fall-off-the-bone ribs, all wrapped up in a fool-proof recipe package.",
                 Ingredients = string.Concat("2 rack St. Louis-style pork ribs", Environment.NewLine,
                                             "½ cup brown sugar", Environment.NewLine,
@@ -89,7 +89,7 @@ namespace HowToBBQSample.ViewModels
                 PrepTime = 15,
                 TotalTime = 255,
                 Serves = 6,
-                Image = "St_Louis_Style_Pork_Ribs"
+                Image = "StLouisStylePorkRibs"
             });
 
             Recipes.Add(new BBQRecipe
@@ -111,7 +111,7 @@ namespace HowToBBQSample.ViewModels
                 PrepTime = 0,
                 TotalTime = 0,
                 Serves = 2,
-                Image = "bbqveg"
+                Image = "BBQveg"
             });
 
             Recipes.Add(new BBQRecipe
@@ -135,7 +135,7 @@ namespace HowToBBQSample.ViewModels
                 PrepTime = 0,
                 TotalTime = 0,
                 Serves = 6,
-                Image = "Buffalo_Burger_with_Oka_Cheese"
+                Image = "BuffaloBurgerwithOkaCheese"
             });
 
             Recipes.Add(new BBQRecipe
@@ -163,7 +163,7 @@ namespace HowToBBQSample.ViewModels
                 PrepTime = 0,
                 TotalTime = 0,
                 Serves = 6,
-                Image = "Surf_N_Turf_Kebabs"
+                Image = "SurfNTurfKebabs"
             });
 
             Recipes.Add(new BBQRecipe
@@ -190,7 +190,7 @@ namespace HowToBBQSample.ViewModels
                 PrepTime = 0,
                 TotalTime = 0,
                 Serves = 6,
-                Image = "Surf_N_Turf_Kebabs"
+                Image = "SurfNTurfKebabs"
             });
 
             Recipes.Add(new BBQRecipe
@@ -208,7 +208,7 @@ namespace HowToBBQSample.ViewModels
                 PrepTime = 0,
                 TotalTime = 0,
                 Serves = 10,
-                Image = "BBQ_d_Pulled_Pork_Sandwiches"
+                Image = "BBQPulledPorkSandwiches"
             });
 
             Recipes.Add(new BBQRecipe
@@ -243,7 +243,7 @@ namespace HowToBBQSample.ViewModels
                 PrepTime = 15,
                 TotalTime = 135,
                 Serves = 8,
-                Image = "BBQ_Turkey_Drumsticks_with_Chipotle_Glaze"
+                Image = "BBQTurkeyDrumstickswithChipotleGlaze"
             });
 
             Recipes.Add(new BBQRecipe
@@ -265,7 +265,7 @@ namespace HowToBBQSample.ViewModels
                 PrepTime = 5,
                 TotalTime = 15,
                 Serves = 4,
-                Image = "Korean_BBQ_Short_Ribs"
+                Image = "KoreanBBQShortRibs"
             });
         }
 

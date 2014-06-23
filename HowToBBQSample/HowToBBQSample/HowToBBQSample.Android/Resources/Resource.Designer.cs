@@ -45,34 +45,34 @@ namespace HowToBBQSample.Droid
 		{
 			
 			// aapt resource value: 0x7f020000
-			public const int BBQ_d_Pulled_Pork_Sandwiches = 2130837504;
+			public const int BBQPulledPorkSandwiches = 2130837504;
 			
 			// aapt resource value: 0x7f020001
-			public const int BBQ_Turkey_Drumsticks_with_Chipotle_Glaze = 2130837505;
+			public const int BBQTurkeyDrumstickswithChipotleGlaze = 2130837505;
 			
 			// aapt resource value: 0x7f020002
-			public const int bbqveg = 2130837506;
+			public const int BBQveg = 2130837506;
 			
 			// aapt resource value: 0x7f020003
-			public const int Buffalo_Burger_with_Oka_Cheese = 2130837507;
+			public const int BuffaloBurgerwithOkaCheese = 2130837507;
 			
 			// aapt resource value: 0x7f020004
-			public const int Dry_Glazed_Pork_Tenderloin = 2130837508;
+			public const int DryGlazedPorkTenderloin = 2130837508;
 			
 			// aapt resource value: 0x7f020005
-			public const int Grilled_Pork_Chops_and_Zesty_Sauce_Vierge_with_Feta = 2130837509;
+			public const int GrilledPorkChopsandZestySauceViergewithFeta = 2130837509;
 			
 			// aapt resource value: 0x7f020006
 			public const int Icon = 2130837510;
 			
 			// aapt resource value: 0x7f020007
-			public const int Korean_BBQ_Short_Ribs = 2130837511;
+			public const int KoreanBBQShortRibs = 2130837511;
 			
 			// aapt resource value: 0x7f020008
-			public const int St_Louis_Style_Pork_Ribs = 2130837512;
+			public const int StLouisStylePorkRibs = 2130837512;
 			
 			// aapt resource value: 0x7f020009
-			public const int Surf_N_Turf_Kebabs = 2130837513;
+			public const int SurfNTurfKebabs = 2130837513;
 			
 			static Drawable()
 			{

@@ -84,15 +84,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Properties\AndroidManifest.xml" />
-    <AndroidResource Include="Resources\Drawable\bbqveg.jpg" />
-    <AndroidResource Include="Resources\Drawable\BBQ_d_Pulled_Pork_Sandwiches.jpg" />
-    <AndroidResource Include="Resources\Drawable\BBQ_Turkey_Drumsticks_with_Chipotle_Glaze.jpg" />
-    <AndroidResource Include="Resources\Drawable\Buffalo_Burger_with_Oka_Cheese.jpg" />
-    <AndroidResource Include="Resources\Drawable\Dry_Glazed_Pork_Tenderloin.jpg" />
-    <AndroidResource Include="Resources\Drawable\Grilled_Pork_Chops_and_Zesty_Sauce_Vierge_with_Feta.jpg" />
-    <AndroidResource Include="Resources\Drawable\Korean_BBQ_Short_Ribs.jpg" />
-    <AndroidResource Include="Resources\Drawable\St_Louis_Style_Pork_Ribs.jpg" />
-    <AndroidResource Include="Resources\Drawable\Surf_N_Turf_Kebabs.jpg" />
+    <AndroidResource Include="Resources\Drawable\BBQveg.jpg" />
+    <AndroidResource Include="Resources\Drawable\BBQPulledPorkSandwiches.jpg" />
+    <AndroidResource Include="Resources\Drawable\BBQTurkeyDrumstickswithChipotleGlaze.jpg" />
+    <AndroidResource Include="Resources\Drawable\BuffaloBurgerwithOkaCheese.jpg" />
+    <AndroidResource Include="Resources\Drawable\DryGlazedPorkTenderloin.jpg" />
+    <AndroidResource Include="Resources\Drawable\GrilledPorkChopsandZestySauceViergewithFeta.jpg" />
+    <AndroidResource Include="Resources\Drawable\KoreanBBQShortRibs.jpg" />
+    <AndroidResource Include="Resources\Drawable\StLouisStylePorkRibs.jpg" />
+    <AndroidResource Include="Resources\Drawable\SurfNTurfKebabs.jpg" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\HowToBBQSample\HowToBBQSample.csproj">

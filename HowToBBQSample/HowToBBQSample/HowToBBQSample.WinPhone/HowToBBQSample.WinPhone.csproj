@@ -149,15 +149,15 @@
     <BundleResource Include="Toolkit.Content\ApplicationBar.Check.png" />
     <BundleResource Include="Toolkit.Content\ApplicationBar.Cancel.png" />
     <BundleResource Include="Toolkit.Content\ApplicationBar.Add.png" />
-    <Content Include="Images\bbq-veg.jpg" />
-    <Content Include="Images\BBQ_d_Pulled_Pork_Sandwiches.jpg" />
-    <Content Include="Images\BBQ_Turkey_Drumsticks_with_Chipotle_Glaze.jpg" />
-    <Content Include="Images\Buffalo_Burger_with_Oka_Cheese.jpg" />
-    <Content Include="Images\Dry_Glazed_Pork_Tenderloin.jpg" />
-    <Content Include="Images\Grilled_Pork_Chops_and_Zesty_Sauce_Vierge_with_Feta.jpg" />
-    <Content Include="Images\Korean_BBQ_Short_Ribs.jpg" />
-    <Content Include="Images\St_Louis_Style_Pork_Ribs.jpg" />
-    <Content Include="Images\Surf_N_Turf_Kebabs.jpg" />
+    <Content Include="Images\BBQveg.jpg" />
+    <Content Include="Images\BBQPulledPorkSandwiches.jpg" />
+    <Content Include="Images\BBQTurkeyDrumstickswithChipotleGlaze.jpg" />
+    <Content Include="Images\BuffaloBurgerwithOkaCheese.jpg" />
+    <Content Include="Images\DryGlazedPorkTenderloin.jpg" />
+    <Content Include="Images\GrilledPorkChopsandZestySauceViergewithFeta.jpg" />
+    <Content Include="Images\KoreanBBQShortRibs.jpg" />
+    <Content Include="Images\StLouisStylePorkRibs.jpg" />
+    <Content Include="Images\SurfNTurfKebabs.jpg" />
     <Content Include="README_FIRST.txt" />
   </ItemGroup>
   <ItemGroup>
