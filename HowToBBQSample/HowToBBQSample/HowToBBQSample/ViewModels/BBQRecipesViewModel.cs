@@ -117,7 +117,7 @@ namespace HowToBBQSample.ViewModels
             _Recipes.Add(new BBQRecipe
             {
                 Name = "Buffalo Burger with Oka Cheese",
-                ShortDesc = "",5
+                ShortDesc = "",
                 Ingredients = string.Concat("2 ¼ lb. ground buffalo meat",Environment.NewLine,
                                             "¼ cup red onion diced",Environment.NewLine,
                                             "¼ cup sun dried cranberries chopped",Environment.NewLine,
@@ -213,26 +213,59 @@ namespace HowToBBQSample.ViewModels
 
             _Recipes.Add(new BBQRecipe
             {
-                Name = "",
-                ShortDesc = "",
-                Ingredients = string.Concat(""),
-                Directions = string.Concat(""),
-                PrepTime = 10,
-                TotalTime = 22,
-                Serves = 4,
-                Image = ""
+                Name = "BBQ Turkey Drumsticks with Chipotle Glaze",
+                ShortDesc = "Try Chuck Hughes' delicious slow-roasted and basted BBQ turkey drumsticks, glazed with chipotle sauce.",
+                Ingredients = string.Concat("Brine", Environment.NewLine,
+                                            "1 cup salt (250 ml)", Environment.NewLine,
+                                            "1 cup of hot water (250 ml)", Environment.NewLine,
+                                            "1 cup molasses (250 ml)", Environment.NewLine,
+                                            "2 lemons, sliced", Environment.NewLine,
+                                            "2 onions, quartered", Environment.NewLine,
+                                            "1 head of garlic, smashed", Environment.NewLine,
+                                            "1 large bunch of rosemary", Environment.NewLine,
+                                            "1 tbsp black peppercorns (15 ml)", Environment.NewLine,
+                                            "8 cup cold water (2 l)", Environment.NewLine,
+                                            "8 turkey drumsticks", Environment.NewLine,
+                                            "Melted butter", Environment.NewLine,
+                                            "Salt and pepper", Environment.NewLine,
+                                            "Chipotle Glaze", Environment.NewLine,
+                                            "Pureed chipotle in adobo sauce, store-bought"
+                                            ),
+                Directions = string.Concat("Brine", Environment.NewLine,
+                                           "1. Pour the hot water in a large and deep non-reactive pan, bucket or large cooler, stir in the salt and molasses until fully dissolved, and then add the lemon, onions garlic, rosemary and peppercorns.", Environment.NewLine,
+                                           "2. Remove the turkey from the brine and dry thoroughly. Season with salt and pepper.", Environment.NewLine,
+                                           "Chipotle Glaze Roasting", Environment.NewLine,
+                                           "1. Prepare your barbecue for indirect grilling by placing about 10 to 12 charcoal briquettes on only one side of the barbecue. Once the barbecue reaches 400 F (200 C), place the turkey drumsticks on the grill on the opposite side of the briquettes.", Environment.NewLine,
+                                           "2. Brush with melted butter and close the lid of your barbecue.", Environment.NewLine,
+                                           "3. Turn and baste the drumsticks every half hour with melted butter. Roast the drumsticks for about 2 hours or until it reaches 160 F (75 C) on a meat thermometer.", Environment.NewLine,
+                                           "4. For serving: Brush the drumstick with puréed chipotle adobo sauce, store-bought."
+                                           ),
+                PrepTime = 15,
+                TotalTime = 135,
+                Serves = 8,
+                Image = "BBQ_Turkey_Drumsticks_with_Chipotle_Glaze"
             });
 
             _Recipes.Add(new BBQRecipe
             {
-                Name = "",
-                ShortDesc = "",
-                Ingredients = string.Concat(""),
-                Directions = string.Concat(""),
-                PrepTime = 10,
-                TotalTime = 22,
+                Name = "Korean BBQ Short Ribs",
+                ShortDesc = "Fire up the grill for these delectable Korean-style short ribs.",
+                Ingredients = string.Concat("½ cup (125 mL) green onions, finely sliced", Environment.NewLine,
+                                            "3/10 cup (80 mL) lime juice", Environment.NewLine,
+                                            "¼ cup (60 mL) VH® Soya Sauce", Environment.NewLine,
+                                            "1 jar (355 mL) VH® Korean BBQ Stir-Fry Sauce", Environment.NewLine,
+                                            "2 ½ lb. (1.2 kg) Korean-style beef short ribs", Environment.NewLine,
+                                            "PAM® Grilling Spray"
+                ),
+                Directions = string.Concat("1. Place green onions, lime juice, VH® Soya Sauce, 1 cup (250 mL) VH® Korean BBQ Stir-Fry Sauce and ribs in a large re-sealable plastic freezer bag. Seal and massage marinade into beef to cover completely.", Environment.NewLine,
+                                           "2. Marinate beef in refrigerator for a least 8 hours, but preferably overnight.", Environment.NewLine,
+                                           "3. Spray grill with PAM® Grilling Spray and heat to high. Remove ribs from bag and discard marinade.", Environment.NewLine,
+                                           "4. Place ribs on grill and cook for 3 minutes and until beef is seared with grill marks. Turn meat over and continue to grill on the second side while basting generously with remaining sauce, another 3 minutes. Remove from the grill and serve immediately."
+                                           ),
+                PrepTime = 5,
+                TotalTime = 15,
                 Serves = 4,
-                Image = ""
+                Image = "Korean_BBQ_Short_Ribs"
             });
         }
 

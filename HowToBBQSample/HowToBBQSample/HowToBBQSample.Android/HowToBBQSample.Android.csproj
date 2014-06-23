@@ -82,6 +82,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Properties\AndroidManifest.xml" />
+    <AndroidResource Include="Resources\Drawable\bbq-veg.jpg" />
+    <AndroidResource Include="Resources\Drawable\BBQ_d_Pulled_Pork_Sandwiches.jpg" />
+    <AndroidResource Include="Resources\Drawable\BBQ_Turkey_Drumsticks_with_Chipotle_Glaze.jpg" />
+    <AndroidResource Include="Resources\Drawable\Buffalo_Burger_with_Oka_Cheese.jpg" />
+    <AndroidResource Include="Resources\Drawable\Dry_Glazed_Pork_Tenderloin.jpg" />
+    <AndroidResource Include="Resources\Drawable\Grilled_Pork_Chops_and_Zesty_Sauce_Vierge_with_Feta.jpg" />
+    <AndroidResource Include="Resources\Drawable\Korean_BBQ_Short_Ribs.jpg" />
+    <AndroidResource Include="Resources\Drawable\St._Louis-Style_Pork_Ribs.jpg" />
+    <AndroidResource Include="Resources\Drawable\Surf_N__Turf_Kebabs.jpg" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\HowToBBQSample\HowToBBQSample.csproj">
