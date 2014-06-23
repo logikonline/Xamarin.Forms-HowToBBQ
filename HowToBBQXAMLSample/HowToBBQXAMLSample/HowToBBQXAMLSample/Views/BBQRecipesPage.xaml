@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+					   xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+					   x:Class="HowToBBQXAMLSample.Views.BBQRecipesPage"
+              xmlns:local="clr-namespace:HowToBBQXAMLSample.Views;assembly=HowToBBQXAMLSample"
+             Title="BBQ Recipes">
+  <ListView x:Name="list" ItemsSource="{Binding Recipes}" ItemTapped="OnItemSelected">
+    <ListView.ItemTemplate>
+      <DataTemplate>
+        <local:AspectImageCell Text="{Binding Name}" Detail="{Binding ShortDesc}" ImageSource="{Binding Image}"/>
+      </DataTemplate>
+    </ListView.ItemTemplate>
+  </ListView>
+</ContentPage>
