@@ -117,7 +117,7 @@ namespace HowToBBQSample.ViewModels
             _Recipes.Add(new BBQRecipe
             {
                 Name = "Buffalo Burger with Oka Cheese",
-                ShortDesc = "",
+                ShortDesc = "",5
                 Ingredients = string.Concat("2 ¼ lb. ground buffalo meat",Environment.NewLine,
                                             "¼ cup red onion diced",Environment.NewLine,
                                             "¼ cup sun dried cranberries chopped",Environment.NewLine,
