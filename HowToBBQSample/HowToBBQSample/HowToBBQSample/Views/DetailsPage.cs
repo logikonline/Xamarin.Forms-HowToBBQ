@@ -14,6 +14,16 @@ namespace HowToBBQSample.Views
         {
             this.Title = recipe.Name;
 
+            if (Device.OS == TargetPlatform.WinPhone)
+            {
+                title = new Label
+                {
+                    Text = recipe.Name,
+                    XAlign = TextAlignment.Center,
+                    Font = Font.SystemFontOfSize(42)
+                };
+            }
+
             var prepTime = new Label
             {
                 Text = string.Concat("PrepTime: ", recipe.PrepTime)

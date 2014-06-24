@@ -16,6 +16,16 @@ namespace HowToBBQSample.Views
         {
             Title = "BBQ Recipes";
 
+            if (Device.OS == TargetPlatform.WinPhone)
+            {
+                title = new Label
+                {
+                    Text = "BBQ Recipes",
+                    XAlign = TextAlignment.Center,
+                    Font = Font.SystemFontOfSize(42)
+                };
+            }
+
             var list = new ListView();
             var viewModel = new BBQRecipesViewModel();
             list.ItemsSource = viewModel.Recipes;
