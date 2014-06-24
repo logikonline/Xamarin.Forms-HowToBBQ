@@ -7,7 +7,14 @@
   <ListView x:Name="list" ItemsSource="{Binding Recipes}" ItemTapped="OnItemSelected">
     <ListView.ItemTemplate>
       <DataTemplate>
-        <local:AspectImageCell Text="{Binding Name}" ImageSource="{Binding Image}" Font="{x:Static constants:Fonts.SmallTitle}"/>
+          <ViewCell>
+            <StackLayout Orientation="Horizontal" Spacing="25" >
+               <Image Source="{Binding Image}" 
+                      WidthRequest="40"
+                     HeightRequest="40" />
+               <Label Font = "18" Text="{Binding Name}"  />
+           </StackLayout>
+         </ViewCell> 
       </DataTemplate>
     </ListView.ItemTemplate>
   </ListView>
