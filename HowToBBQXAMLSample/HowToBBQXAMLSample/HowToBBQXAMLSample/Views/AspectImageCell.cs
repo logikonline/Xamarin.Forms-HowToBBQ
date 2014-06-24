@@ -4,5 +4,7 @@ namespace HowToBBQXAMLSample.Views
 {
     public class AspectImageCell : ImageCell
     {
+      
+        
     }
 }

@@ -4,23 +4,22 @@
 					   x:Class="HowToBBQXAMLSample.Views.DetailsPage"
              xmlns:local="clr-namespace:HowToBBQXAMLSample;assembly=HowToBBQXAMLSample"
              Title="{Binding Name}">
-  <ContentPage.Resources>
-    <ResourceDictionary>
-      <local:StringFormatConverter x:Key="stringFormatConverter" />
-    </ResourceDictionary>
-  </ContentPage.Resources>
   
   <ScrollView Padding="20">
     <StackLayout VerticalOptions="FillAndExpand" Spacing="10">
        <Image Source="{Binding Image}"  VerticalOptions="FillAndExpand" Aspect="AspectFit"/>
       <StackLayout Orientation="Horizontal">
-        <Label Text="PrepTime:"
-              HorizontalOptions="FillAndExpand" />
-        <Label Text="{Binding PrepTime Converter={StaticResource stringFormatConverter}}"
-               Font="Small" />
+        <Label Text="PrepTime:" />
+        <Label Text="{Binding PrepTime, StringFormat='{0}'}"/>
       </StackLayout>
-       <Label Text="{Binding TotalTime}"/>
-       <Label Text="{Binding Serves}"/>
+      <StackLayout Orientation="Horizontal">
+        <Label Text="PrepTime:" />
+        <Label Text="{Binding TotalTime,StringFormat='{0}'}"/>
+      </StackLayout>
+      <StackLayout Orientation="Horizontal">
+        <Label Text="PrepTime:"/>
+        <Label Text="{Binding Serves,StringFormat='{0}'}"/>
+      </StackLayout>
        <Label Text="{Binding Ingredients}"/>
        <Label Text="{Binding Directions}"/>
     </StackLayout>

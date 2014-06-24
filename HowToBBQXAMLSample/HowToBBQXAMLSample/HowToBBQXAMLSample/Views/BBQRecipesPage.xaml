@@ -7,7 +7,7 @@
   <ListView x:Name="list" ItemsSource="{Binding Recipes}" ItemTapped="OnItemSelected">
     <ListView.ItemTemplate>
       <DataTemplate>
-        <local:AspectImageCell Text="{Binding Name}" Detail="{Binding ShortDesc}" ImageSource="{Binding Image}"/>
+        <local:AspectImageCell Text="{Binding Name}" ImageSource="{Binding Image}" Font="{x:Static constants:Fonts.SmallTitle}"/>
       </DataTemplate>
     </ListView.ItemTemplate>
   </ListView>
