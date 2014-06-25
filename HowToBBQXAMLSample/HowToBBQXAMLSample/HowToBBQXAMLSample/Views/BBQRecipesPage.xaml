@@ -33,11 +33,11 @@
       <ListView.ItemTemplate>
         <DataTemplate>
           <ViewCell>
-            <StackLayout Orientation="Horizontal" Spacing="25">
+            <StackLayout Orientation="Horizontal">
               <Image Source="{Binding Image}"
                      WidthRequest="40"
                     HeightRequest="40" />
-              <Label Font = "15"  Text="{Binding Name}"/>
+              <Label Font = "15"  Text="{Binding Name}" HorizontalOptions="Center"/>
             </StackLayout>
           </ViewCell>
         </DataTemplate>
