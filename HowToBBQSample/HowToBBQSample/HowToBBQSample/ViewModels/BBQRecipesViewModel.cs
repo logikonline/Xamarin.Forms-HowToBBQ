@@ -1,16 +1,15 @@
 ﻿using HowToBBQSample.Models;
 using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Xamarin.Forms;
 
 namespace HowToBBQSample.ViewModels
 {
     public class BBQRecipesViewModel
     {
         public ObservableCollection<BBQRecipe> Recipes { get; set; }
+
+        private string prefix = Device.OnPlatform("", "", "Images/");
 
         public BBQRecipesViewModel()
         {
@@ -20,7 +19,7 @@ namespace HowToBBQSample.ViewModels
             {
                 Name = "Dry Glazed Pork Tenderloin",
                 ShortDesc = "",
-                Ingredients = string.Concat("3 light brown sugar, packed",Environment.NewLine,
+                Ingredients = string.Concat("3 light brown sugar, packed", Environment.NewLine,
                                             "3 clove garlic, minced", Environment.NewLine,
                                             "1 tbsp finely grated orange zest", Environment.NewLine,
                                             "3 tbsp paprika", Environment.NewLine,
@@ -31,13 +30,13 @@ namespace HowToBBQSample.ViewModels
                                             "2 tsp ground black pepper", Environment.NewLine,
                                             "1 tsp cream of tartar", Environment.NewLine,
                                             "3 1 lb. pork tenderloins"),
-                Directions = string.Concat("1. For dry glaze, stir brown sugar, garlic and orange zest to blend. In a separate bowl, stir remaining ingredients, then add to brown sugar mixture. Set aside until ready to use.",Environment.NewLine,
+                Directions = string.Concat("1. For dry glaze, stir brown sugar, garlic and orange zest to blend. In a separate bowl, stir remaining ingredients, then add to brown sugar mixture. Set aside until ready to use.", Environment.NewLine,
                                            "2. Clean pork tenderloin of any connective tissue. Preheat grill to medium and clean well. Rub tenderloins completely with dry glaze and immediately place on grill. Grill, uncovered, for about 8 minutes on each side until an internal temperature of 165°F is reached, rotating tenderloins 90° on each side. Let pork sit for a moment before slicing and serving."
                                            ),
                 Serves = 10,
                 PrepTime = 0,
                 TotalTime = 0,
-                Image = "DryGlazedPorkTenderloin"
+                Image = prefix + "DryGlazedPorkTenderloin.jpg"
             });
 
             Recipes.Add(new BBQRecipe
@@ -64,7 +63,8 @@ namespace HowToBBQSample.ViewModels
                 PrepTime = 10,
                 TotalTime = 22,
                 Serves = 4,
-                Image = "GrilledPorkChopsandZestySauceViergewithFeta"
+                Image = prefix + "GrilledPorkChopsandZestySauceViergewithFeta.jpg"
+
             });
 
             Recipes.Add(new BBQRecipe
@@ -89,7 +89,7 @@ namespace HowToBBQSample.ViewModels
                 PrepTime = 15,
                 TotalTime = 255,
                 Serves = 6,
-                Image = "StLouisStylePorkRibs"
+                Image = prefix + "StLouisStylePorkRibs.jpg"
             });
 
             Recipes.Add(new BBQRecipe
@@ -111,31 +111,31 @@ namespace HowToBBQSample.ViewModels
                 PrepTime = 0,
                 TotalTime = 0,
                 Serves = 2,
-                Image = "BBQveg"
+                Image = prefix + "BBQveg.jpg"
             });
 
             Recipes.Add(new BBQRecipe
             {
                 Name = "Buffalo Burger with Oka Cheese",
                 ShortDesc = "",
-                Ingredients = string.Concat("2 ¼ lb. ground buffalo meat",Environment.NewLine,
-                                            "¼ cup red onion diced",Environment.NewLine,
-                                            "¼ cup sun dried cranberries chopped",Environment.NewLine,
-                                            "1 tsp fresh ground pepper",Environment.NewLine,
-                                            "Salt to taste",Environment.NewLine,
-                                            "Olive oil for brushing",Environment.NewLine,
-                                            "6 slices Oka cheese",Environment.NewLine,
-                                            "6 hamburger buns",Environment.NewLine,
-                                            "1 cup Store bought apple cranberry chutney",Environment.NewLine,
+                Ingredients = string.Concat("2 ¼ lb. ground buffalo meat", Environment.NewLine,
+                                            "¼ cup red onion diced", Environment.NewLine,
+                                            "¼ cup sun dried cranberries chopped", Environment.NewLine,
+                                            "1 tsp fresh ground pepper", Environment.NewLine,
+                                            "Salt to taste", Environment.NewLine,
+                                            "Olive oil for brushing", Environment.NewLine,
+                                            "6 slices Oka cheese", Environment.NewLine,
+                                            "6 hamburger buns", Environment.NewLine,
+                                            "1 cup Store bought apple cranberry chutney", Environment.NewLine,
                                             "Optional: garnish with red onion slices, lettuce and mayonnaise"
                 ),
-                Directions = string.Concat("1. In a medium sized bowl mix together ground meat, onion, cranberries, salt and pepper. Knead until well combined. Form into 6 equal patties being careful to work with just the meat until it forms. Brush each side lightly with olive oil. Preheat grill to medium high (375F) (190C). Oil the grill to prevent sticking.",Environment.NewLine,
+                Directions = string.Concat("1. In a medium sized bowl mix together ground meat, onion, cranberries, salt and pepper. Knead until well combined. Form into 6 equal patties being careful to work with just the meat until it forms. Brush each side lightly with olive oil. Preheat grill to medium high (375F) (190C). Oil the grill to prevent sticking.", Environment.NewLine,
                                            "2. Place burgers on the grill and cook for 3-4 minutes per side for medium rare. Buffalo burgers should be served medium rare, as the lean meat doesn’t take well to over cooking. Flip burgers. In the last minute of cooking, top with cheese and close the lid of the barbeque. Remove burgers from grill when cheese has melted. Serve with store bought apple cranberry chutney, and garnish with red onion, lettuce and mayonnaise if desired."
                 ),
                 PrepTime = 0,
                 TotalTime = 0,
                 Serves = 6,
-                Image = "BuffaloBurgerwithOkaCheese"
+                Image = prefix + "BuffaloBurgerwithOkaCheese.jpg"
             });
 
             Recipes.Add(new BBQRecipe
@@ -163,7 +163,7 @@ namespace HowToBBQSample.ViewModels
                 PrepTime = 0,
                 TotalTime = 0,
                 Serves = 6,
-                Image = "SurfNTurfKebabs"
+                Image = prefix + "SurfNTurfKebabs.jpg"
             });
 
             Recipes.Add(new BBQRecipe
@@ -190,7 +190,7 @@ namespace HowToBBQSample.ViewModels
                 PrepTime = 0,
                 TotalTime = 0,
                 Serves = 6,
-                Image = "SurfNTurfKebabs"
+                Image = prefix + "SurfNTurfKebabs.jpg"
             });
 
             Recipes.Add(new BBQRecipe
@@ -208,7 +208,7 @@ namespace HowToBBQSample.ViewModels
                 PrepTime = 0,
                 TotalTime = 0,
                 Serves = 10,
-                Image = "BBQPulledPorkSandwiches"
+                Image = prefix + "BBQPulledPorkSandwiches.jpg"
             });
 
             Recipes.Add(new BBQRecipe
@@ -243,7 +243,7 @@ namespace HowToBBQSample.ViewModels
                 PrepTime = 15,
                 TotalTime = 135,
                 Serves = 8,
-                Image = "BBQTurkeyDrumstickswithChipotleGlaze"
+                Image = prefix + "BBQTurkeyDrumstickswithChipotleGlaze.jpg"
             });
 
             Recipes.Add(new BBQRecipe
@@ -265,7 +265,7 @@ namespace HowToBBQSample.ViewModels
                 PrepTime = 5,
                 TotalTime = 15,
                 Serves = 4,
-                Image = "KoreanBBQShortRibs"
+                Image = prefix + "KoreanBBQShortRibs.jpg"
             });
         }
 

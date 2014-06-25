@@ -13,14 +13,14 @@ namespace HowToBBQSample.Views
         public DetailsPage(BBQRecipe recipe)
         {
             this.Title = recipe.Name;
-
+            Label title = null;
             if (Device.OS == TargetPlatform.WinPhone)
             {
                 title = new Label
                 {
                     Text = recipe.Name,
                     XAlign = TextAlignment.Center,
-                    Font = Font.SystemFontOfSize(42)
+                    Font = Font.SystemFontOfSize(32)
                 };
             }
 

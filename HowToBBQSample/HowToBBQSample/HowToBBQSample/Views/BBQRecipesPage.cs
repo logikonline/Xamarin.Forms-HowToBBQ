@@ -15,7 +15,7 @@ namespace HowToBBQSample.Views
         public BBQRecipesPage()
         {
             Title = "BBQ Recipes";
-
+            Label title = null;
             if (Device.OS == TargetPlatform.WinPhone)
             {
                 title = new Label

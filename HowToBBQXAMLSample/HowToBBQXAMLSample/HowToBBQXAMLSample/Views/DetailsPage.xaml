@@ -4,7 +4,16 @@
 					   x:Class="HowToBBQXAMLSample.Views.DetailsPage"
              xmlns:local="clr-namespace:HowToBBQXAMLSample;assembly=HowToBBQXAMLSample"
              Title="{Binding Name}">
-  <Grid>
+    <ContentPage.Resources>
+    <ResourceDictionary>
+      <OnPlatform x:Key="labelFont" x:TypeArguments="Font">
+        <OnPlatform.iOS>0</OnPlatform.iOS>
+        <OnPlatform.Android>0</OnPlatform.Android>
+        <OnPlatform.WinPhone>32</OnPlatform.WinPhone>
+      </OnPlatform>
+    </ResourceDictionary>
+  </ContentPage.Resources>
+  <Grid Padding="20,0,0,0">
     <Grid.ColumnDefinitions>
       <ColumnDefinition  Width="Auto" />
     </Grid.ColumnDefinitions>
@@ -12,34 +21,17 @@
       <RowDefinition />
       <RowDefinition />
     </Grid.RowDefinitions>
-    <StackLayout Grid.Row="0" Grid.Column="0" Orientation="Vertical" Spacing="10" Padding="20">
-      <Label Text="{Binding Name}" >
-        <Label.Font>
-          <OnPlatform x:TypeArguments="Font">
-            <OnPlatform.iOS>0</OnPlatform.iOS>
-            <OnPlatform.Android>0</OnPlatform.Android>
-            <OnPlatform.WinPhone>32</OnPlatform.WinPhone>
-          </OnPlatform>
-        </Label.Font>
-      </Label>
+    <StackLayout Grid.Row="0" Grid.Column="0" Orientation="Vertical" Spacing="10" Padding="0,0,0,20">
+      <Label Text="{Binding Name}" Font="{StaticResource labelFont}" />
       <Image Source="{Binding Image}"  VerticalOptions="FillAndExpand" Aspect="AspectFit"/>
     </StackLayout>
     <ScrollView  Grid.Row="1" Grid.Column="0" Padding="20">
       <StackLayout VerticalOptions="FillAndExpand" Spacing="10">
-          <StackLayout Orientation="Horizontal">
-          <Label Text="PrepTime:" />
-          <Label Text="{Binding PrepTime, StringFormat='{0}'}"/>
-        </StackLayout>
-        <StackLayout Orientation="Horizontal">
-          <Label Text="PrepTime:" />
-          <Label Text="{Binding TotalTime,StringFormat='{0}'}"/>
-        </StackLayout>
-        <StackLayout Orientation="Horizontal">
-          <Label Text="PrepTime:"/>
-          <Label Text="{Binding Serves,StringFormat='{0}'}"/>
-        </StackLayout>
-        <Label Text="{Binding Ingredients}"/>
-        <Label Text="{Binding Directions}"/>
+          <Label Text="{Binding PrepTime, StringFormat='PrepTime: {0}'}"/>
+          <Label Text="{Binding TotalTime,StringFormat='TotalTime: {0}'}"/>
+          <Label Text="{Binding Serves,StringFormat='Serves: {0}'}"/>
+          <Label Text="{Binding Ingredients}"/>
+          <Label Text="{Binding Directions}"/>
       </StackLayout>
     </ScrollView>
   </Grid>    
