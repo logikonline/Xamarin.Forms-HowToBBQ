@@ -19,12 +19,18 @@ namespace HowToBBQSample.Views
                 title = new Label
                 {
                     Text = recipe.Name,
-                    XAlign = TextAlignment.Center,
+                    XAlign = TextAlignment.Start,
                     Font = Font.SystemFontOfSize(32)
                 };
             }
 
-            var prepTime = new Label
+            var stackPanel = new StackLayout
+            {
+                VerticalOptions = LayoutOptions.FillAndExpand,
+                Children = { title }
+            };
+
+              var prepTime = new Label
             {
                 Text = string.Concat("PrepTime: ", recipe.PrepTime)
             };
@@ -56,16 +62,30 @@ namespace HowToBBQSample.Views
                 VerticalOptions = LayoutOptions.FillAndExpand
             };
 
-            Content = new ScrollView
+
+            var listview = new ScrollView
             {
                 Padding = 20,
                 Content = new StackLayout
                 {
                     Spacing = 10,
                     VerticalOptions = LayoutOptions.FillAndExpand,
-                    Children = {image, prepTime, totalTime, serves, ingredients, directions}
+                    Children = {prepTime, totalTime, serves, ingredients, directions}
                 }
             };
+
+            stackPanel.Children.Insert(2, listview);
+
+            stackPanel.Children.Insert(1, image);
+
+            if (Device.OS == TargetPlatform.WinPhone)
+            {
+                stackPanel.Children.Insert(0, title);
+            }
+
+            stackPanel.Padding =  new Thickness(20, 0, 0, 0);
+
+            Content = stackPanel;
         }
     }
 }

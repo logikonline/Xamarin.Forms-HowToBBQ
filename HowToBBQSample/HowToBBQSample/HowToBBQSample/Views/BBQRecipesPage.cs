@@ -21,7 +21,6 @@ namespace HowToBBQSample.Views
                 title = new Label
                 {
                     Text = "BBQ Recipes",
-                    XAlign = TextAlignment.Center,
                     Font = Font.SystemFontOfSize(42)
                 };
             }
@@ -33,11 +32,10 @@ namespace HowToBBQSample.Views
             var cell = new DataTemplate(typeof(AspectImageCell));
 
             cell.SetBinding(TextCell.TextProperty, "Name");
-            cell.SetBinding(TextCell.DetailProperty, "ShortDesc");
             cell.SetBinding(ImageCell.ImageSourceProperty, "Image");
-
+            
             list.ItemTemplate = cell;
-
+                                             
             list.ItemTapped += (sender, args) =>
             {
                 var recipe = args.Item as BBQRecipe;
@@ -49,11 +47,25 @@ namespace HowToBBQSample.Views
                 list.SelectedItem = null;
             };
 
-            Content = list;
+            var stackPanel = new StackLayout();
+
+            stackPanel.Padding = new Thickness(20, 0, 0, 0);
+
+            stackPanel.Children.Insert(1, list);
+
+            stackPanel.Children.Insert(0, title);
+                        
+            Content = stackPanel;
+
+            
         }
     }
 
     public class AspectImageCell : ImageCell
     {
+        public AspectImageCell()
+        {
+         
+        }
     }
 }
