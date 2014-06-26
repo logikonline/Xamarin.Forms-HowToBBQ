@@ -15,6 +15,6 @@ namespace HowToBBQXAMLSample.Models
         public int PrepTime { get; set; }
         public int TotalTime { get; set; }
         public int Serves { get; set; }
-        public string Image { get; set; }
+        public string ImageSource { get; set; }
     }
 }

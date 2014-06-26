@@ -32,14 +32,7 @@
     <ListView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"  x:Name="list" ItemsSource="{Binding Recipes}" ItemTapped="OnItemSelected">
       <ListView.ItemTemplate>
         <DataTemplate>
-          <ViewCell>
-            <StackLayout Orientation="Horizontal">
-              <Image Source="{Binding Image}"
-                     WidthRequest="40"
-                    HeightRequest="40" />
-              <Label Font = "15"  Text="{Binding Name}" HorizontalOptions="Center"/>
-            </StackLayout>
-          </ViewCell>
+          <local:AspectImageCell Name="{Binding Name}" ImageSource="{Binding ImageSource}"/>
         </DataTemplate>
       </ListView.ItemTemplate>
     </ListView>

@@ -40,7 +40,7 @@ namespace HowToBBQXAMLSample.ViewModels
                 Serves = 10,
                 PrepTime = 0,
                 TotalTime = 0,
-                Image = prefix + "DryGlazedPorkTenderloin.jpg"
+                ImageSource = prefix + "DryGlazedPorkTenderloin.jpg"
             });
 
             Recipes.Add(new BBQRecipe
@@ -67,7 +67,7 @@ namespace HowToBBQXAMLSample.ViewModels
                 PrepTime = 10,
                 TotalTime = 22,
                 Serves = 4,
-                Image =  prefix + "GrilledPorkChopsandZestySauceViergewithFeta.jpg"
+                ImageSource = prefix + "GrilledPorkChopsandZestySauceViergewithFeta.jpg"
 
             });
 
@@ -93,7 +93,7 @@ namespace HowToBBQXAMLSample.ViewModels
                 PrepTime = 15,
                 TotalTime = 255,
                 Serves = 6,
-                Image = prefix + "StLouisStylePorkRibs.jpg"
+                ImageSource = prefix + "StLouisStylePorkRibs.jpg"
             });
 
             Recipes.Add(new BBQRecipe
@@ -115,7 +115,7 @@ namespace HowToBBQXAMLSample.ViewModels
                 PrepTime = 0,
                 TotalTime = 0,
                 Serves = 2,
-                Image = prefix + "BBQveg.jpg"
+                ImageSource = prefix + "BBQveg.jpg"
             });
 
             Recipes.Add(new BBQRecipe
@@ -139,7 +139,7 @@ namespace HowToBBQXAMLSample.ViewModels
                 PrepTime = 0,
                 TotalTime = 0,
                 Serves = 6,
-                Image = prefix + "BuffaloBurgerwithOkaCheese.jpg"
+                ImageSource = prefix + "BuffaloBurgerwithOkaCheese.jpg"
             });
 
             Recipes.Add(new BBQRecipe
@@ -167,7 +167,7 @@ namespace HowToBBQXAMLSample.ViewModels
                 PrepTime = 0,
                 TotalTime = 0,
                 Serves = 6,
-                Image = prefix + "SurfNTurfKebabs.jpg"
+                ImageSource = prefix + "SurfNTurfKebabs.jpg"
             });
 
             Recipes.Add(new BBQRecipe
@@ -194,7 +194,7 @@ namespace HowToBBQXAMLSample.ViewModels
                 PrepTime = 0,
                 TotalTime = 0,
                 Serves = 6,
-                Image = prefix + "SurfNTurfKebabs.jpg"
+                ImageSource = prefix + "SurfNTurfKebabs.jpg"
             });
 
             Recipes.Add(new BBQRecipe
@@ -212,7 +212,7 @@ namespace HowToBBQXAMLSample.ViewModels
                 PrepTime = 0,
                 TotalTime = 0,
                 Serves = 10,
-                Image = prefix + "BBQPulledPorkSandwiches.jpg"
+                ImageSource = prefix + "BBQPulledPorkSandwiches.jpg"
             });
 
             Recipes.Add(new BBQRecipe
@@ -247,7 +247,7 @@ namespace HowToBBQXAMLSample.ViewModels
                 PrepTime = 15,
                 TotalTime = 135,
                 Serves = 8,
-                Image = prefix + "BBQTurkeyDrumstickswithChipotleGlaze.jpg"
+                ImageSource = prefix + "BBQTurkeyDrumstickswithChipotleGlaze.jpg"
             });
 
             Recipes.Add(new BBQRecipe
@@ -269,7 +269,7 @@ namespace HowToBBQXAMLSample.ViewModels
                 PrepTime = 5,
                 TotalTime = 15,
                 Serves = 4,
-                Image = prefix + "KoreanBBQShortRibs.jpg"
+                ImageSource = prefix + "KoreanBBQShortRibs.jpg"
             });
         }
 
