@@ -32,7 +32,7 @@
     <ListView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"  x:Name="list" ItemsSource="{Binding Recipes}" ItemTapped="OnItemSelected">
       <ListView.ItemTemplate>
         <DataTemplate>
-          <local:AspectImageCell Name="{Binding Name}" ImageSource="{Binding ImageSource}"/>
+          <local:AspectImageCell/>
         </DataTemplate>
       </ListView.ItemTemplate>
     </ListView>

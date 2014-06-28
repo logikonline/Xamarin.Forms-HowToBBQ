@@ -32,7 +32,7 @@
     </ScrollView>
       <StackLayout Grid.Row="0" Grid.Column="0" Orientation="Vertical">
       <Label Text="{Binding Name}" Font="{StaticResource labelFont}" />
-      <Image Source="{Binding Image}"  VerticalOptions="FillAndExpand" Aspect="AspectFit"/>
+      <Image Source="{Binding ImageSource}"  VerticalOptions="FillAndExpand" Aspect="AspectFit"/>
     </StackLayout>
   </Grid>    
 </ContentPage>
