@@ -152,9 +152,9 @@ Global
 		{B0B780D7-64CD-41E5-9690-270B82A16E0A}.Debug|ARM.Deploy.0 = Debug|ARM
 		{B0B780D7-64CD-41E5-9690-270B82A16E0A}.Debug|iPhone.ActiveCfg = Debug|Any CPU
 		{B0B780D7-64CD-41E5-9690-270B82A16E0A}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
-		{B0B780D7-64CD-41E5-9690-270B82A16E0A}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
-		{B0B780D7-64CD-41E5-9690-270B82A16E0A}.Debug|Mixed Platforms.Build.0 = Debug|x86
-		{B0B780D7-64CD-41E5-9690-270B82A16E0A}.Debug|Mixed Platforms.Deploy.0 = Debug|x86
+		{B0B780D7-64CD-41E5-9690-270B82A16E0A}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{B0B780D7-64CD-41E5-9690-270B82A16E0A}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{B0B780D7-64CD-41E5-9690-270B82A16E0A}.Debug|Mixed Platforms.Deploy.0 = Debug|Any CPU
 		{B0B780D7-64CD-41E5-9690-270B82A16E0A}.Debug|x86.ActiveCfg = Debug|x86
 		{B0B780D7-64CD-41E5-9690-270B82A16E0A}.Debug|x86.Build.0 = Debug|x86
 		{B0B780D7-64CD-41E5-9690-270B82A16E0A}.Debug|x86.Deploy.0 = Debug|x86
@@ -175,5 +175,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = HowToBBQSample\HowToBBQSample.Android\HowToBBQSample.Android.csproj
 	EndGlobalSection
 EndGlobal

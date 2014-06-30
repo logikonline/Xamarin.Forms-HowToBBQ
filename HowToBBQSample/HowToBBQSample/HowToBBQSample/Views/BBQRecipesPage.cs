@@ -50,7 +50,9 @@ namespace HowToBBQSample.Views
 
             stackPanel.Children.Insert(1, list);
 
-            stackPanel.Children.Insert(0, title);
+			if (Device.OS == TargetPlatform.WinPhone) {
+				stackPanel.Children.Insert (0, title);
+			}
                         
             Content = stackPanel;
 
